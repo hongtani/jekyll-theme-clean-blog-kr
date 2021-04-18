@@ -1,12 +1,17 @@
-title:              "블로그 제목"
-tagline:            "블로그 슬로건"
+title:              "해외 트렌드의 모든 것"
+tagline:            "한 눈에 보기 쉽게 요약된 해외 이슈와 반응을 모아보는 블로그"
 email:              "your-email@example.com"
-description:        "블로그 설명"
-author:             "작성자 이름"
+description:        "1. 국내 이슈에 대한 해외(중국) 네티즌 반응 모음
+ex) 한국 드라마 중국 네티즌 반응 모음,
+     아이유 신규 앨범 해외 반응 모음
+2. 해외(중국) 트렌드 프리뷰 모음
+ex) 해외 비대면 서비스 트렌드 모음
+      주목받는 해외 길거리음식 트렌드 모음"
+author:             "Hongtani"
 baseurl:            "/"
-url:                "https://도메인"
+url:                "https://reactall.kr"
 locale:             "ko_KR"
-thumbnail:          "/img/thumbnail.jpg"
+thumbnail:          "/img/thumbnail.jpeg"
 
 # Social Profiles
 twitter_username:   twitter_username

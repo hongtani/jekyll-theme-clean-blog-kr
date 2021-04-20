@@ -1,15 +1,10 @@
-title:              "해외 트렌드의 모든 것"
-tagline:            "한 눈에 보기 쉽게 요약된 해외 이슈와 반응을 모아보는 블로그"
-email:              "your-email@example.com"
-description:        "1. 국내 이슈에 대한 해외(중국) 네티즌 반응 모음
-ex) 한국 드라마 중국 네티즌 반응 모음,
-     아이유 신규 앨범 해외 반응 모음
-2. 해외(중국) 트렌드 프리뷰 모음
-ex) 해외 비대면 서비스 트렌드 모음
-      주목받는 해외 길거리음식 트렌드 모음"
+title:              "Hello world from Korea"
+tagline:            "A blog that summarizes Korean issues and reactions"
+email:              "hongtani625@gmail.com"
+description:        "Korea is real good"
 author:             "Hongtani"
-baseurl:            "/"
-url:                "https://reactall.kr"
+baseurl:            ""
+url:                "https://korealgood.com"
 locale:             "ko_KR"
 thumbnail:          "/img/thumbnail.jpeg"
 

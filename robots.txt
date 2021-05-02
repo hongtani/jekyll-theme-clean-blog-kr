@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://korealgood.com/sitemap.xml
+#DaumWebMasterTool:7b861d4d5d62f0e9760d1000d9301b31e876ad80b25fcb1d2ee52413613a3d86:SBDn+3M1gAUD2c6N/ci3rg==

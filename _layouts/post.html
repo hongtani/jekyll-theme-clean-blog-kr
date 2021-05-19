@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <!-- Page Header -->
 {% if page.background %}
   <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
@@ -50,23 +49,14 @@ layout: default
       </div>
     </div>
   </article>
+  <script>
+    var event = document.querySelector('#post-content');
+    event.addEventListener("click", function( ) {
+      gtag('event', '보기', {
+      'event_category': '글',
+      'event_label': '{{ page.title }}',
+      'value': 10
+      });
+      }, false);
+    </script>
 {% include disqus.html %}
-
-<script>
-var event = document.querySelector('#download-button');
-event.addEventListener("click", function( ) {
-  console.log("clicked!");
-  }, false);
-</script>
-
-<script>
- var event = document.querySelector('#download-button');
- event.addEventListener("click", function( ) {
-   gtag('event', 'action', {
-   'event_category': '글',
-   'event_action' : '{{ page.title }}'
-   'event_label': '보기',
-   'value': 100
-   });
-   }, false);
- </script>

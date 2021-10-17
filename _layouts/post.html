@@ -31,15 +31,45 @@ layout: default
           {{ content }}
 
           <hr>
+          <p>          <a class="btn btn--clipboard" id="shareon-clipboard" title="Copy URL to Clipboard" data-clipboard-text="{{ site.url }}{{ page.url }}">
+                      <i class="fas fa-fw fa-link" aria-hidden="true"></i>
+                      <span> Copy URL</span>
+                    </a></p>
 
+
+          <div class="more-posts">
+            <div class="more-category">
+              <h4>{{ page.categories }} 카테고리의 다른 글</h4>
+              <a href="/category/{{ page.categories }}/index.html" class="more-button">더보기</a>
+            </div>
+            <table>
+              <tbody>
+                {% assign count = 0 %}
+                {% for post in site.posts %}
+                  {% if post.categories == page.categories %}
+                    {% assign count = count | plus: 1 %}
+                    {% if count < 6 %}
+                      <tr>
+                        <th class="more-posts-title">
+                          <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                        </th>
+                        <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
+                      </tr>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <p></p>
           <div class="clearfix">
 
             {% if page.previous.url %}
-            <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+            <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; 이전 글 보기<span class="d-none d-md-inline">
                 Post</span></a>
             {% endif %}
             {% if page.next.url %}
-            <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
+            <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">다음 글 보기<span class="d-none d-md-inline">
                 Post</span> &rarr;</a>
             {% endif %}
 

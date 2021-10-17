@@ -7,29 +7,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <a class="navbar-brand" href="{{"/" | relative_url }}">{{ site.title | escape }}</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      Menu
+      MENU
       <i class="fa fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{{"/" | relative_url }}">Home</a>
+          <a class="nav-link" href="{{"/" | relative_url }}">메인으로</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="{{ "/posts" | relative_url }}">모든 글 보기</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/category/mkt" | relative_url }}">디지털마케팅</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
+          <a class="nav-link" href="{{ "/category/brand" | relative_url }}">브랜드</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ "/posts" | relative_url }}">ViewAll</a>
+          <a class="nav-link" href="{{"/category/content" | relative_url }}">콘텐츠</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ "/category/from" | relative_url }}">from</a>
+          <a class="nav-link" href="{{"/category/etc" | relative_url }}">일상</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ "/category/to" | relative_url }}">to</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{"/contact" | relative_url }}">Contact</a>
-        </li>
+                  <a class="nav-link" href="{{"/about" | relative_url }}">소개</a>
+                </li>
       </ul>
     </div>
   </div>
